@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@import "../basics.scss";
+@import "../head.scss";
+
+.navbar {
+  @include d-flex(space-between);
+  height: 10vh;
+  &__navLogo {
+    width: 10%;
+  }
+  &__links {
+    @include d-flex;
+    gap: 4rem;
+    font-size: 1.5rem;
+    a {
+      color: $secondary-color;
+      transition: linear 0.1s;
+      &:hover {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &__icons {
+    @include d-flex;
+    gap: 2.3rem;
+    font-size: 1.8rem;
+    .cart {
+      @include d-flex;
+      padding: 0.8rem 0.8rem;
+      border-radius: 7px;
+      background-color: $main-color;
+      color: $white;
+      border: 1px solid $white;
+      transition: linear 0.2s;
+      &:hover {
+        background-color: $white;
+        color: $main-color;
+        border: 1px solid $main-color;
+      }
+    }
+  }
+  .hamburger {
+    display: none;
+    color: $main-color;
+    font-size: 2rem;
+  }
+}
+.header {
+  @include d-flex;
+  height: 90vh;
+  flex: 1 1 41rem;
+  background: url(../../assets/images/fashion-bg.png);
+  &__info {
+    width: 50%;
+    p {
+      font-size: 2rem;
+      color: $main-color;
+      line-height: 6rem;
+    }
+    h1 {
+      font-family: "Titania MF", sans-serif;
+      font-size: 6rem;
+      color: $secondary-color;
+      padding: .1rem 0;
+      font-weight: 400;
+      line-height: 7rem;
+      
+    }
+    h3 {
+      color: $secondary-color;
+      font-weight: 400;
+      font-size: 1.7rem;
+      line-height: 3rem;
+      padding: 2rem 0;
+      
+    }
+  }
+  &__photo {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}

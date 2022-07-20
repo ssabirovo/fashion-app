@@ -1,0 +1,30 @@
+@import "../basics.scss";
+@import "../head.scss";
+
+.servicess {
+  @include d-flex;
+  gap: 2rem;
+  img {
+    width: 3rem;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    h1 {
+      color: $secondary-color;
+    }
+    h4 {
+      color: $secondary-color;
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (max-width: 853px) {
+    .servicess {
+        flex-direction: column;
+        text-align: center;
+    }
+  }

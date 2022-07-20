@@ -1,0 +1,18 @@
+@import "../basics.scss";
+@import "../head.scss";
+
+button {
+  padding: 1rem 5rem;
+  border: 8px;
+  background-color: $main-color;
+  color: $white;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: linear 0.1s;
+  &:hover {
+    background-color: transparent;
+    color: $main-color;
+    border: 1px solid $main-color;
+  }
+}

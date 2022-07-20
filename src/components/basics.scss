@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto:wght@300;400;500;700;900&display=swap");
+$main-color: #ff730d;
+$secondary-color: #331c18;
+$black: #000;
+$grey: #8f95a5;
+$white: #fff;
+
+// mixins
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 4rem;
+}
+@mixin d-flex($j-s: center, $a-i: center, $f-d: row) {
+  display: flex;
+  justify-content: $j-s;
+  align-items: $a-i;
+  flex-direction: $f-d;
+}
+%f-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
